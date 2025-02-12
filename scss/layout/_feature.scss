@@ -1,7 +1,7 @@
 @use '../abstracts/' as a;
 
 .feature {
-    padding: a.$spacing-400;
+    padding: a.$spacing-400 a.$spacing-400 a.$spacing-800 a.$spacing-400;
     text-align: center;
 
     @include a.add-flex(column, a.$spacing-800);
@@ -17,15 +17,4 @@
     &__subheading {
         color: var(--cyan-600);
     }
-
-    &-2 {
-        color: var(--white);
-        background: url('assets/mobile/image-footer.jpg');
-        background-size: cover;
-
-        p {
-            color: var(--white);
-        }
-    }
-
 }

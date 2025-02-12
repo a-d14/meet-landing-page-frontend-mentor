@@ -7,7 +7,7 @@
     font: a.$text-preset-5;
 }
 
-.btn__primary {
+.btn-primary {
     @extend %btn;
     background-color: var(--cyan-600);
 
@@ -16,7 +16,11 @@
     }
 }
 
-.btn__secondary {
+.btn-secondary {
     @extend %btn;
     background-color: var(--purple-600);
+
+    span {
+        color: var(--purple-300);
+    }
 }
