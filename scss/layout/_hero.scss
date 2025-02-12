@@ -1,0 +1,23 @@
+@use '../abstracts' as a;
+
+.hero {
+    padding: a.$spacing-800 0 a.$spacing-400 0;
+    text-align: center;
+    overflow-x: hidden;
+
+    @include a.add-flex(column, a.$spacing-700);
+
+    img {
+        display: block;
+        transform: scale(1.15);
+    }
+
+    &__text {
+        padding: 0 a.$spacing-400;
+        @include a.add-flex(column, a.$spacing-300);
+    }
+
+    &__cta {
+        @include a.add-flex(column, a.$spacing-200);
+    }
+}

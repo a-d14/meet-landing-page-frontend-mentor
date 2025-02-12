@@ -1,0 +1,11 @@
+@use '../abstracts' as a;
+
+.image-grid {
+    display: grid;
+    gap: a.$spacing-200;
+    grid-template: auto auto / 1fr 1fr;
+    
+    img {
+        border-radius: a.$spacing-100;
+    }
+}

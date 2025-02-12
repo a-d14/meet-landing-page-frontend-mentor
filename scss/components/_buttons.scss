@@ -1,0 +1,22 @@
+@use '../abstracts/' as a;
+
+%btn {
+    padding: a.$spacing-200 a.$spacing-500;
+    border-radius: a.rem(29);
+    color: white;
+    font: a.$text-preset-5;
+}
+
+.btn__primary {
+    @extend %btn;
+    background-color: var(--cyan-600);
+
+    span {
+        color: var(--cyan-300);
+    }
+}
+
+.btn__secondary {
+    @extend %btn;
+    background-color: var(--purple-600);
+}

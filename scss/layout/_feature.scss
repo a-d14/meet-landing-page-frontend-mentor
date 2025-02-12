@@ -1,0 +1,31 @@
+@use '../abstracts/' as a;
+
+.feature {
+    padding: a.$spacing-400;
+    text-align: center;
+
+    @include a.add-flex(column, a.$spacing-800);
+
+    &__body {
+        @include a.add-flex(column, a.$spacing-400);
+    }
+
+    &__header {
+        @include a.add-flex(column, a.$spacing-200);
+    }
+
+    &__subheading {
+        color: var(--cyan-600);
+    }
+
+    &-2 {
+        color: var(--white);
+        background: url('../../assets/mobile/image-footer.jpg');
+        background-size: cover;
+
+        p {
+            color: var(--white);
+        }
+    }
+
+}

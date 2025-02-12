@@ -1,0 +1,25 @@
+@use '../abstracts/' as a;
+
+.feature-marker {
+    
+    @include a.add-flex(column, 0);
+
+    &__line {
+        border-left: 0.5px solid var(--slate-300);
+        border-right: 0.5px solid var(--slate-300);
+        width: 0;
+        height: a.rem(80);
+    }
+
+    &__circle {
+        background-color: white;
+        border: 1px solid var(--slate-300);
+        border-radius: 50%;
+        width: a.rem(56);
+        height: a.rem(56);
+        font: a.$text-preset-5;
+        color: var(--slate-600);
+
+        @include a.add-flex(column, 0);
+    }
+}

@@ -1,0 +1,20 @@
+@use "sass:list";
+@use 'functions' as f;
+
+$text-preset-1: 900 list.slash(f.rem(40), 1.1) 'Red Hat Display';
+$text-preset-2: 900 list.slash(f.rem(32), 1.1) 'Red Hat Display';
+$text-preset-3: 900 list.slash(f.rem(12), 1.1) 'Red Hat Display';
+$text-preset-4: 500 list.slash(f.rem(16), 1.5) 'Red Hat Display';
+$text-preset-5: 900 list.slash(f.rem(16), 1.5) 'Red Hat Display';
+
+$spacing-50: f.rem(4);
+$spacing-100: f.rem(8);
+$spacing-200: f.rem(16); 
+$spacing-300: f.rem(24);
+$spacing-400: f.rem(32); 
+$spacing-500: f.rem(40); 
+$spacing-700: f.rem(56);
+$spacing-800: f.rem(64);
+$spacing-900: f.rem(72);
+$spacing-1000: f.rem(80);
+$spacing-1400: f.rem(112);
