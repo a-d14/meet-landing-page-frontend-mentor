@@ -56,12 +56,12 @@ p {
   font: a.$text-preset-1;
 
   @media all and (min-width: 768px) {
-    font-size: a.rem(48);
+    font-size: clamp(a.rem(40), a.rem(40) + 2vw, a.rem(64));
   }
 
-  @media all and (min-width: 1440px) {
-    font-size: a.rem(64);
-  }
+  // @media all and (min-width: 1440px) {
+  //   font-size: a.rem(64);
+  // }
 
 }
 
@@ -69,35 +69,38 @@ p {
   font: a.$text-preset-2;
 
   @media all and (min-width: 768px) {
-    font-size: a.rem(36);
+    font-size: clamp(a.rem(32), a.rem(32) + 1.5vw, a.rem(40));
   }
 
-  @media all and (min-width: 1440px) {
-    font-size: a.rem(40);
-  }
+  // @media all and (min-width: 1440px) {
+  //   font-size: a.rem(40);
+  // }
 }
 
 .text-preset-3 {
   font: a.$text-preset-3;
+  font-size: clamp(a.rem(12), a.rem(12) + 1.2vw, a.rem(18));
   letter-spacing: a.rem(4);
 
-  @media all and (min-width: 768px) {
-    font-size: a.rem(14);
-  }
+  // @media all and (min-width: 768px) {
+  //   font-size: a.rem(14);
+  // }
 
-  @media all and (min-width: 1440px) {
-    font-size: a.rem(18);
-  }
+  // @media all and (min-width: 1440px) {
+  //   font-size: a.rem(18);
+  // }
 }
 
 .text-preset-4 {
   font: a.$text-preset-4;
 
   @media all and (min-width: 1440px) {
-    font-size: a.rem(18);
+    font-size: clamp(a.rem(16), a.rem(16) + 1.5vw, a.rem(18));
   }
 }
 
 .text-preset-5 {
   font: a.$text-preset-5;
 }
+
+

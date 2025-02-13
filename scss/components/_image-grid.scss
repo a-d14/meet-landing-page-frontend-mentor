@@ -4,8 +4,16 @@
     display: grid;
     gap: a.$spacing-200;
     grid-template: auto auto / 1fr 1fr;
+
+    max-width: a.rem(1120);
+    width: 100%;
     
     img {
         border-radius: a.$spacing-100;
+    }
+
+    @media (min-width: 768px) {
+        grid-template: auto / repeat(4, 1fr);
+        gap: a.$spacing-300;
     }
 }

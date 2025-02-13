@@ -10,13 +10,18 @@
 </head>
 <body>
   <header >
-    <img src="./assets/logo.svg" alt="company logo">
+    <img src="./assets/logo.svg" alt="meet">
   </header>
 
   <main>
     <section class="hero">
-      <img src="./assets/tablet/image-hero.png" alt="hero image">
-      <section class="hero__text">
+      <picture class="hero__image-left">
+        <source media="(min-width: 1440px)"
+                srcset="assets/desktop/image-hero-left.png 394w">
+        <source srcset="assets/tablet/image-hero.png 820w">
+        <img src="assets/tablet/image-hero.png" alt="hero image">
+      </picture>
+      <section class="hero__body">
         <h1 class="hero__header text-preset-1"><span>Group Chat</span> <span>for Everyone</span></h1>
         <p class="hero__body text-preset-4">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
         <div class="hero__cta">
@@ -24,37 +29,39 @@
           <a class="btn-secondary" href="#">What is it?</a>
         </div>
       </section>
+      <picture class="hero__image-right">
+        <source  media="(min-width: 1440px)"
+                srcset="assets/desktop/image-hero-right.png 394w">
+        <img src="assets/desktop/image-hero-right.png" alt="hero image">
+      </picture>
     </section>
-    <section class="feature">
-      <section class="feature-marker">
-        <span class="feature-marker__line"></span>
-        <span class="feature-marker__circle">01</span>
-      </section>
+    <section class="feature-section-1">
+      <div class="feature-marker">
+        <span class="feature-marker__text">01</span>
+      </div>
       <section class="image-grid">
         <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="a woman on videocall">
         <img src="./assets/desktop/image-women-videochatting.jpg" alt="a woman video chatting">
         <img src="./assets/desktop/image-men-in-meeting.jpg" alt="a man in a meeting">
         <img src="./assets/desktop/image-man-texting.jpg" alt="a max texting">
       </section>
-      <section class="feature__body">
-        <div class="feature__header">
-          <h3 class="feature__subheading text-preset-3">Built for modern use</h3>
-          <h2 class="feature__heading text-preset-2">Smarter meetings, all in one place</h2>
+      <section class="feature-section-1__body">
+        <div class="feature-section-1__header">
+          <span class="feature-section-1__subheading text-preset-3">Built for modern use</span>
+          <h2 class="feature-section-1__heading text-preset-2">Smarter meetings, all in one place</h2>
         </div>
-        <p class="feature__text text-preset-4">Send messages, share files, show your screen, and record your meetings — all in one 
+        <p class="feature-section-1__text text-preset-4">Send messages, share files, show your screen, and record your meetings — all in one 
           workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
       </section>
     </section>
+    <div class="feature-marker">
+      <span class="feature-marker__text">02</span>
+    </div>
+    <section class="feature-section-2">
+      <h2 class="text-preset-2">Experience more together</h2>
+      <p class="text-preset-4">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+      <a class="btn-secondary" href="#">Download <span>v1.3</span></a>
+    </section>
   </main>
-  <section class="feature-marker">
-    <span class="feature-marker__line"></span>
-    <span class="feature-marker__circle">02</span>
-  </section>
-  <footer>
-    <div class="overlay"></div>
-    <h2 class="text-preset-2">Experience more together</h2>
-    <p class="text-preset-4">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-    <a class="btn-secondary" href="#">Download <span>v1.3</span></a>
-  </footer>
 </body>
 </html>

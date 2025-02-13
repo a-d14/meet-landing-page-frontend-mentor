@@ -1,6 +1,6 @@
 @use '../abstracts/' as a;
 
-.feature {
+.feature-section-1 {
     padding: a.$spacing-400 a.$spacing-400 a.$spacing-800 a.$spacing-400;
     text-align: center;
 
@@ -8,6 +8,8 @@
 
     &__body {
         @include a.add-flex(column, a.$spacing-400);
+        max-width: a.rem(544);
+        margin: 0 auto;
     }
 
     &__header {
