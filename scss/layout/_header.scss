@@ -9,4 +9,8 @@ header {
     img {
         width: a.rem(118);
     }
+
+    @media (min-width: 1400px) {
+        padding-top: a.$spacing-1000;
+    }
 }
