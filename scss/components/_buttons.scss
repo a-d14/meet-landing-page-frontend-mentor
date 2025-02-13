@@ -14,11 +14,19 @@
     span {
         color: var(--cyan-300);
     }
+
+    &:hover {
+        background-color: #71C0D4;
+    }
 }
 
 .btn-secondary {
     @extend %btn;
     background-color: var(--purple-600);
+
+    &:hover {
+        background-color: #B18BDD;
+    }
 
     span {
         color: var(--purple-300);
